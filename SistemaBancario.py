@@ -36,6 +36,7 @@ while True:
             if opcao == 1:
                 saldo += limite
                 saldo -= valor
+                limite = 0
                 numero_saques += 1
                 print('Você sacou ', valor, 'Seu novo saldo e de: ', saldo)
         elif valor > saldo+limite and numero_saques < LIMITE_SAQUES:
